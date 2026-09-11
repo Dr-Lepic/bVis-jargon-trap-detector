@@ -248,7 +248,7 @@ def call_openrouter_text(
     )
 
 
-def test_api_connection(api_key: str) -> Tuple[bool, str]:
+def validate_api_key(api_key: str) -> Tuple[bool, str]:
     """Validates an OpenRouter API key against the OpenRouter auth endpoint.
 
     Args:
@@ -277,3 +277,7 @@ def test_api_connection(api_key: str) -> Tuple[bool, str]:
         return False, f"HTTP status {resp.status_code}"
     except requests.exceptions.RequestException as e:
         return False, f"Connection failed: {str(e)}"
+
+
+# Alias for semantic clarity
+check_api_connection = validate_api_key
