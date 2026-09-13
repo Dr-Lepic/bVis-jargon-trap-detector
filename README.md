@@ -4,7 +4,7 @@
 Each experiment pairs an image with a factual diagnostic narrative and a misleading narrative written in authoritative medical jargon.
 The judge chooses the report that best matches the image. The benchmark records whether it selected the misleading report.
 
-## Table of contents
+
 
 - [Overview](#overview)
 - [Features](#features)
