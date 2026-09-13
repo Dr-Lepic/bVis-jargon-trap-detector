@@ -1,4 +1,4 @@
-"""Prompt templates and formatting utilities for the Jargon Bias Benchmark.
+"""Prompt templates and formatting utilities for bVis.
 
 Contains standard prompts for:
 1. Jargon Writer model: Generates deceptive, authoritative reports for wrong conditions.

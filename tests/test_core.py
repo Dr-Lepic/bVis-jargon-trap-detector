@@ -1,4 +1,4 @@
-"""Unit test suite for the Med-Jargon Benchmark Core Engine.
+"""Unit test suite for the bVis Core Engine.
 
 Tests:
 1. Image processing (Lanczos resizing, base64 encoding/decoding, dimension preservation)

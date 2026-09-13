@@ -78,8 +78,8 @@ def _get_headers(api_key: str) -> Dict[str, str]:
     return {
         "Authorization": f"Bearer {clean_key}",
         "Content-Type": "application/json",
-        "HTTP-Referer": "https://github.com/jargon-bias-benchmark",
-        "X-Title": "Jargon Bias Benchmark",
+        "HTTP-Referer": "https://github.com/bVis",
+        "X-Title": "bVis",
     }
 
 

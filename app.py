@@ -1,4 +1,4 @@
-"""Med-Jargon Benchmark — Streamlit main entrypoint.
+"""bVis — Streamlit main entrypoint.
 
 Responsibilities (Member 2 scope):
   - st.set_page_config
@@ -29,13 +29,13 @@ load_dotenv()
 # Page config — MUST be the first Streamlit call
 # ---------------------------------------------------------------------------
 st.set_page_config(
-    page_title="🔬 Med-Jargon Benchmark",
+    page_title="bVis",
     page_icon="🔬",
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
         "About": (
-            "**Med-Jargon Benchmark** — Evaluating Multimodal Vision-Language Model "
+            "**bVis** — Evaluating Multimodal Vision-Language Model "
             "Susceptibility to Authoritative Falsehoods.\n\n"
             "Built with ❤️ using Streamlit and OpenRouter."
         )
@@ -53,7 +53,7 @@ st.markdown(
         <h1 style="margin:0;font-size:1.9rem;font-weight:800;
                    background:linear-gradient(90deg,#a78bfa,#7c6af7);
                    -webkit-background-clip:text;-webkit-text-fill-color:transparent;">
-            🔬 MED-JARGON BENCHMARK
+            🔬 bVis
         </h1>
         <p style="margin:0.25rem 0 0 0;color:#8b90a7;font-size:0.92rem;">
             Evaluating Multimodal Vision-Language Model Susceptibility to

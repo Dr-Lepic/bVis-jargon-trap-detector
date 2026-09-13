@@ -1,4 +1,4 @@
-"""Core Backend Engine for the Med-Jargon Benchmark.
+"""Core Backend Engine for bVis.
 
 Provides modular interfaces for:
 - Multimodal and text LLM invocation via OpenRouter (with backoff retry).

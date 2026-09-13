@@ -1,4 +1,4 @@
-"""Single-Case Evaluation Playground tab for the Med-Jargon Benchmark.
+"""Single-Case Evaluation Playground tab for bVis.
 
 Implements the dual-column layout defined in plan.md §3.2:
   - Image input selector (Upload / Local path)

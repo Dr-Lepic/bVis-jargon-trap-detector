@@ -1,4 +1,4 @@
-"""Verdict parser and evaluation utilities for the Jargon Bias Benchmark.
+"""Verdict parser and evaluation utilities for bVis.
 
 Extracts structured verdicts ("A", "B", "UNCLEAR") and justification from
 multimodal LLM responses, and evaluates whether the model fell for the jargon trap.

@@ -1,4 +1,4 @@
-"""Image processing utilities for the Med-Jargon Benchmark.
+"""Image processing utilities for bVis.
 
 Handles high-quality downsampling (capped at 768px Lanczos) and base64 encoding
 for multimodal vision-language model API consumption.

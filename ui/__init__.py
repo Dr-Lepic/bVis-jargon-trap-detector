@@ -1,1 +1,1 @@
-"""UI package for the Med-Jargon Benchmark Streamlit application."""
+"""UI package for the bVis Streamlit application."""

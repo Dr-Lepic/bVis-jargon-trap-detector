@@ -1,4 +1,4 @@
-"""Custom CSS design theme for the Med-Jargon Benchmark Streamlit application.
+"""Custom CSS design theme for the bVis Streamlit application.
 
 Provides styled cards, badge pills, verdict callout banners, and general UI polish
 via injected CSS. Import and call inject_css() at app startup.

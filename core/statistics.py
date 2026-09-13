@@ -1,4 +1,4 @@
-"""Statistical engine for the Jargon Bias Benchmark.
+"""Statistical engine for bVis.
 
 Implements:
 1. Wilson Score 95% Confidence Interval for binomial proportions (trap rates).
