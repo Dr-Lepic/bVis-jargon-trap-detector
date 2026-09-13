@@ -1,4 +1,4 @@
-
+# bVis
  
 **bVis** is a Streamlit application for evaluating how multimodal vision-language models compare dermatology reports.
 Each experiment pairs an image with a factual diagnostic narrative and a misleading narrative written in authoritative medical jargon.
