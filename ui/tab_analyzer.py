@@ -15,8 +15,30 @@ from ui.theme import section_label
 
 
 def coerce_result_types(df: pd.DataFrame) -> pd.DataFrame:
-    """Normalize booleans/numbers commonly changed by CSV serialization."""
+    """Normalize booleans/numbers and column aliases from CSV serialization or notebook runs."""
     clean = df.copy()
+
+    # Column aliases support (e.g. notebook's image_file -> image)
+    aliases = {
+        "image_file": "image",
+        "image_path": "image",
+        "filename": "image",
+        "true_diagnosis": "disease_true",
+        "actual_condition": "disease_true",
+        "wrong_condition": "disease_wrong",
+        "plain_report": "report_plain",
+        "jargon_report": "report_jargon",
+        "ab": "correct_label",
+        "label": "correct_label",
+    }
+    renamed = {}
+    for col in clean.columns:
+        canonical = aliases.get(col.strip().lower())
+        if canonical and canonical not in clean.columns:
+            renamed[col] = canonical
+    if renamed:
+        clean = clean.rename(columns=renamed)
+
     if "pick" in clean:
         clean["pick"] = clean["pick"].fillna("UNCLEAR").astype(str).str.upper()
     if "fell_for_jargon" in clean:
@@ -26,6 +48,33 @@ def coerce_result_types(df: pd.DataFrame) -> pd.DataFrame:
     for column in ("words_plain", "words_jargon", "picked_words"):
         if column in clean:
             clean[column] = pd.to_numeric(clean[column], errors="coerce")
+
+    # Derive status if missing
+    if "status" not in clean.columns and "fell_for_jargon" in clean.columns:
+        def _get_status(row: pd.Series) -> str:
+            p = str(row.get("pick", "")).upper()
+            if p == "UNCLEAR":
+                return "UNCLEAR"
+            return "TRAPPED" if row.get("fell_for_jargon") else "CORRECT"
+        clean["status"] = clean.apply(_get_status, axis=1)
+
+    # Derive case_id if missing
+    if "case_id" not in clean.columns:
+        clean["case_id"] = [f"case-{i+1:02d}" for i in range(len(clean))]
+
+    # Extract justification from verdict_raw if justification is missing
+    if "justification" not in clean.columns and "verdict_raw" in clean.columns:
+        from core import parse_judge_verdict
+        clean["justification"] = clean["verdict_raw"].apply(
+            lambda v: parse_judge_verdict(str(v)).get("justification", "") if pd.notna(v) else ""
+        )
+
+    # Compute word counts if reports are present but word counts are not
+    if "report_plain" in clean.columns and "words_plain" not in clean.columns:
+        clean["words_plain"] = clean["report_plain"].apply(lambda t: len(str(t).split()) if pd.notna(t) else None)
+    if "report_jargon" in clean.columns and "words_jargon" not in clean.columns:
+        clean["words_jargon"] = clean["report_jargon"].apply(lambda t: len(str(t).split()) if pd.notna(t) else None)
+
     return clean
 
 
