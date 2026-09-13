@@ -21,22 +21,25 @@ OPENROUTER_API_BASE = "https://openrouter.ai/api/v1"
 OPENROUTER_CHAT_URL = f"{OPENROUTER_API_BASE}/chat/completions"
 OPENROUTER_AUTH_URL = f"{OPENROUTER_API_BASE}/auth/key"
 
-DEFAULT_JUDGE_MODEL = "minimax/minimax-m3:free"
-DEFAULT_WRITER_MODEL = "meta-llama/llama-3.3-70b-instruct"
+DEFAULT_JUDGE_MODEL = "inclusionai/ling-3.0-flash-vl:free"
+DEFAULT_WRITER_MODEL = "inclusionai/ling-3.0-flash-sante:free"
 
 POPULAR_JUDGE_MODELS: List[str] = [
-    "minimax/minimax-m3:free",
-    "google/gemini-2.0-flash-exp:free",
-    "qwen/qwen-2.5-vl-72b-instruct:free",
-    "meta-llama/llama-3.2-11b-vision-instruct",
+    "inclusionai/ling-3.0-flash-vl:free",
+    "dots-studio/dots-3-note-preview:free",
+    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "google/gemma-4-31b-it:free",
+    "minimax/minimax-m3",
     "google/gemini-2.0-flash-001",
 ]
 
 POPULAR_WRITER_MODELS: List[str] = [
+    "inclusionai/ling-3.0-flash-sante:free",
+    "liquid/lfm-2.5-2.6b:free",
+    "nvidia/nemotron-3.5-lightning:free",
+    "cohere/north-mini-code:free",
     "meta-llama/llama-3.3-70b-instruct",
     "google/gemini-2.0-flash-001",
-    "qwen/qwen-2.5-72b-instruct",
-    "meta-llama/llama-3.1-8b-instruct:free",
 ]
 
 
@@ -53,6 +56,20 @@ class OpenRouterAuthError(OpenRouterError):
 class OpenRouterRateLimitError(OpenRouterError):
     """Raised when rate limits are exhausted after retries (HTTP 429)."""
     pass
+
+
+def _extract_error_message(resp: requests.Response) -> str:
+    """Extracts a human-readable error message from an OpenRouter response."""
+    try:
+        err_json = resp.json()
+        if isinstance(err_json, dict) and "error" in err_json:
+            err_obj = err_json["error"]
+            if isinstance(err_obj, dict) and "message" in err_obj:
+                return str(err_obj["message"])
+            return str(err_obj)
+        return resp.text
+    except Exception:
+        return resp.text or f"HTTP {resp.status_code}"
 
 
 def _get_headers(api_key: str) -> Dict[str, str]:
@@ -79,6 +96,7 @@ def _execute_with_retry(
 
     headers = _get_headers(api_key)
     delay = initial_delay
+    model_name = payload.get("model", "unknown")
 
     for attempt in range(max_retries + 1):
         try:
@@ -89,17 +107,29 @@ def _execute_with_retry(
                 timeout=timeout,
             )
 
-            # Handle immediate auth rejection
-            if response.status_code in (401, 403):
-                raise OpenRouterAuthError(
-                    f"Authentication failed ({response.status_code}): {response.text}"
-                )
+            # Handle 4xx client configuration errors (never retry, report message immediately)
+            if 400 <= response.status_code < 500 and response.status_code != 429:
+                err_msg = _extract_error_message(response)
+                if response.status_code in (401, 403):
+                    raise OpenRouterAuthError(
+                        f"Authentication failed ({response.status_code}): {err_msg}"
+                    )
+                if response.status_code == 404:
+                    raise OpenRouterError(
+                        f"Model '{model_name}' not found or unavailable on OpenRouter (HTTP 404): {err_msg}"
+                    )
+                if response.status_code == 402:
+                    raise OpenRouterError(
+                        f"Insufficient credits for '{model_name}' (HTTP 402): {err_msg}"
+                    )
+                raise OpenRouterError(f"OpenRouter error ({response.status_code}): {err_msg}")
 
             # Handle rate limiting (429)
             if response.status_code == 429:
                 if attempt == max_retries:
+                    err_msg = _extract_error_message(response)
                     raise OpenRouterRateLimitError(
-                        f"OpenRouter rate limit reached after {max_retries} retries: {response.text}"
+                        f"OpenRouter rate limit reached after {max_retries} retries: {err_msg}"
                     )
 
                 retry_after = response.headers.get("Retry-After")
@@ -117,7 +147,8 @@ def _execute_with_retry(
             # Handle transient server errors (500, 502, 503, 504)
             if response.status_code in (500, 502, 503, 504):
                 if attempt == max_retries:
-                    response.raise_for_status()
+                    err_msg = _extract_error_message(response)
+                    raise OpenRouterError(f"OpenRouter server error ({response.status_code}): {err_msg}")
                 wait_time = delay + random.uniform(0.1, 0.5)
                 logger.warning(
                     "OpenRouter server error (%d). Retrying in %.1fs (attempt %d/%d)...",
@@ -130,7 +161,11 @@ def _execute_with_retry(
                 delay *= 2
                 continue
 
-            response.raise_for_status()
+            # Check for any other unexpected error
+            if response.status_code != 200:
+                err_msg = _extract_error_message(response)
+                raise OpenRouterError(f"OpenRouter request failed ({response.status_code}): {err_msg}")
+
             data = response.json()
 
             # Validate response shape
@@ -141,6 +176,9 @@ def _execute_with_retry(
             content = message.get("content", "")
             return content.strip()
 
+        except (OpenRouterError, OpenRouterAuthError, OpenRouterRateLimitError):
+            # Do not intercept our domain errors
+            raise
         except requests.exceptions.RequestException as e:
             if attempt == max_retries:
                 raise OpenRouterError(f"Network error communicating with OpenRouter: {e}") from e

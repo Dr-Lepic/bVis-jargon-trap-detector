@@ -110,25 +110,41 @@ with st.sidebar:
     # --- Model selectors ---
     st.markdown("#### 🤖 Model Selection")
 
-    judge_model: str = st.selectbox(
+    judge_options = list(POPULAR_JUDGE_MODELS) + ["✏️ Custom Model..."]
+    selected_judge = st.selectbox(
         "⚖️ Judge Model (VLM)",
-        options=POPULAR_JUDGE_MODELS,
-        index=POPULAR_JUDGE_MODELS.index(DEFAULT_JUDGE_MODEL)
-        if DEFAULT_JUDGE_MODEL in POPULAR_JUDGE_MODELS
-        else 0,
-        key="sidebar_judge_model",
+        options=judge_options,
+        index=0,
+        key="sidebar_judge_model_select",
         help="Multimodal Vision-Language Model used to evaluate which report is more accurate.",
     )
+    if selected_judge == "✏️ Custom Model...":
+        judge_model = st.text_input(
+            "Custom Judge Model Slug",
+            value="",
+            placeholder="e.g. google/gemini-2.0-flash-001",
+            key="sidebar_custom_judge",
+        )
+    else:
+        judge_model = selected_judge
 
-    writer_model: str = st.selectbox(
+    writer_options = list(POPULAR_WRITER_MODELS) + ["✏️ Custom Model..."]
+    selected_writer = st.selectbox(
         "✍️ Writer Model (text LLM)",
-        options=POPULAR_WRITER_MODELS,
-        index=POPULAR_WRITER_MODELS.index(DEFAULT_WRITER_MODEL)
-        if DEFAULT_WRITER_MODEL in POPULAR_WRITER_MODELS
-        else 0,
-        key="sidebar_writer_model",
+        options=writer_options,
+        index=0,
+        key="sidebar_writer_model_select",
         help="Text-only LLM used to generate adversarial jargon reports.",
     )
+    if selected_writer == "✏️ Custom Model...":
+        writer_model = st.text_input(
+            "Custom Writer Model Slug",
+            value="",
+            placeholder="e.g. meta-llama/llama-3.3-70b-instruct",
+            key="sidebar_custom_writer",
+        )
+    else:
+        writer_model = selected_writer
 
     st.divider()
 

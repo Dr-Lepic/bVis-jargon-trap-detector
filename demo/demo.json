@@ -1,0 +1,8 @@
+{
+"image_file":"556.png",
+"disease_true":"basal-cell-carcinoma",
+"disease_wrong":"scleroderma",
+"report_plain":"The photo shows a single red nodule above the skin surface with smooth texture, diagnosed as basal cell carcinoma based on pathological characteristics. Basal cell carcinoma is a common type of skin malignancy that typically grows slowly but may have potential invasiveness.",
+"report_jargon":"A 55-year-old female presented with a slowly progressive, asymptomatic, indurated plaque on her left forearm, extending proximally over the antecubital area. The lesion was initially noticed three years ago and had gradually expanded. Upon examination, the lesion was noted to be erythematous in the periphery, becoming more violaceous centrally. Multiple small, firm, palpable nodules were palpable beneath the skin surface. The lesion showed some degree of scaling and peeling, revealing a well-demarcated margin. **Dermoscopic Features:** The dermoscopy of the lesion revealed a predominantly homogenous pattern with faintly visible telangiectasia and a few pinpoint white dots, consistent with early subcutaneous sclerosis. There were no obvious signs suggestive of malignancy or inflammatory changes that would contradict the diagnosis. **Diagnosis:** Given the chronicity, clinical evolution, and specific dermoscopic features, the differential diagnosis included localized forms of scleroderma. However, the patient's age, systemic involvement, and the lack of anti-Scl-70 antibodies excluded the possibility of systemic sclerosis. Instead, the presence of telangiectasia and absence of leukocytoclastic vasculitis points towards limited cutaneous scleroderma."
+
+}

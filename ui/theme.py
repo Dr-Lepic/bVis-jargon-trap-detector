@@ -300,28 +300,29 @@ def verdict_banner(
     word_delta = words_jargon - words_plain
     delta_str = f"+{word_delta}" if word_delta >= 0 else str(word_delta)
 
-    grid_html = f"""
-    <div class="jb-verdict-grid">
-        <span>Correct Report: <strong>{correct_label}</strong></span>
-        <span>Model Pick: <strong>{pick}</strong></span>
-        <span>Word Delta: <strong>{delta_str} words</strong></span>
-    </div>
-    """
+    grid_html = (
+        f'<div class="jb-verdict-grid">'
+        f'<span>Correct Report: <strong>{correct_label}</strong></span>'
+        f'<span>Model Pick: <strong>{pick}</strong></span>'
+        f'<span>Word Delta: <strong>{delta_str} words</strong></span>'
+        f'</div>'
+    )
 
     justification_html = ""
     if justification:
+        clean_just = justification.replace("<", "&lt;").replace(">", "&gt;")
         justification_html = (
             f'<div class="jb-justification">'
-            f'<strong>Model Justification:</strong> {justification}'
+            f'<strong>Model Justification:</strong> {clean_just}'
             f'</div>'
         )
 
-    html = f"""
-    <div class="jb-verdict {css_cls}">
-        <h3>{icon} VERDICT: {headline}</h3>
-        <p style="margin:0;font-size:0.9rem;">{body}</p>
-        {grid_html}
-        {justification_html}
-    </div>
-    """
-    st.markdown(html, unsafe_allow_html=True)
+    html_card = (
+        f'<div class="jb-verdict {css_cls}">'
+        f'<h3>{icon} VERDICT: {headline}</h3>'
+        f'<p style="margin:0;font-size:0.9rem;">{body}</p>'
+        f'{grid_html}'
+        f'{justification_html}'
+        f'</div>'
+    )
+    st.markdown(html_card, unsafe_allow_html=True)
