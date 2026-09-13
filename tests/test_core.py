@@ -261,6 +261,17 @@ class TestStatistics:
     def test_length_confound_rate_empty(self):
         assert math.isnan(length_confound_rate(pd.DataFrame()))
 
+    def test_length_confound_rate_missing_word_columns(self):
+        """When words_plain/words_jargon are missing (e.g. notebook judge_*.csv), returns nan without error."""
+        df_no_words = pd.DataFrame({
+            "image_file": ["1.png"],
+            "pick": ["B"],
+            "correct_label": ["A"],
+            "fell_for_jargon": [True],
+            "picked_words": [120],
+        })
+        assert math.isnan(length_confound_rate(df_no_words))
+
     def test_calculate_batch_statistics(self):
         df = pd.DataFrame({
             "image_file": ["1.jpg", "2.jpg", "3.jpg", "4.jpg"],

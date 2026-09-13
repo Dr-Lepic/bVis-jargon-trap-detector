@@ -70,10 +70,21 @@ def length_confound_rate(df: pd.DataFrame) -> float:
 
     df_copy = df.copy()
 
+    # If words_plain and words_jargon are missing, see if we can derive them from report_plain and report_jargon
+    if not {"words_plain", "words_jargon"}.issubset(df_copy.columns):
+        if {"report_plain", "report_jargon"}.issubset(df_copy.columns):
+            def _count_words(t: Any) -> int:
+                return len(str(t).split()) if pd.notna(t) else 0
+
+            df_copy["words_plain"] = df_copy["report_plain"].apply(_count_words)
+            df_copy["words_jargon"] = df_copy["report_jargon"].apply(_count_words)
+        else:
+            return float("nan")
+
     # If picked_words not directly present, compute it if necessary columns exist
     if "picked_words" not in df_copy.columns:
         if {"pick", "correct_label", "words_plain", "words_jargon"}.issubset(df_copy.columns):
-            def _calc_pw(row):
+            def _calc_pw(row: pd.Series) -> Any:
                 pick = str(row.get("pick", "")).strip().upper()
                 correct = str(row.get("correct_label", "")).strip().upper()
                 if pick not in ("A", "B"):
@@ -81,23 +92,12 @@ def length_confound_rate(df: pd.DataFrame) -> float:
                 return row["words_plain"] if pick == correct else row["words_jargon"]
 
             df_copy["picked_words"] = df_copy.apply(_calc_pw, axis=1)
-        elif {"pick", "correct_label", "report_plain", "report_jargon"}.issubset(df_copy.columns):
-            def _count_words(t):
-                return len(str(t).split())
-
-            df_copy["words_plain"] = df_copy["report_plain"].apply(_count_words)
-            df_copy["words_jargon"] = df_copy["report_jargon"].apply(_count_words)
-
-            def _calc_pw_text(row):
-                pick = str(row.get("pick", "")).strip().upper()
-                correct = str(row.get("correct_label", "")).strip().upper()
-                if pick not in ("A", "B"):
-                    return None
-                return row["words_plain"] if pick == correct else row["words_jargon"]
-
-            df_copy["picked_words"] = df_copy.apply(_calc_pw_text, axis=1)
         else:
             return float("nan")
+
+    # Guard: verify all required columns exist before calling dropna
+    if not {"picked_words", "words_plain", "words_jargon"}.issubset(df_copy.columns):
+        return float("nan")
 
     # Filter to scored cases with valid word counts
     valid = df_copy.dropna(subset=["picked_words", "words_plain", "words_jargon"])
