@@ -1,0 +1,101 @@
+image_file,disease_true,correct_label,pick,fell_for_jargon,picked_words,verdict_raw
+556.png,basal-cell-carcinoma,B,A,True,97,"Better report: A
+Report A provides a comprehensive and accurate diagnosis based on clinical, dermoscopic, and histopathologic findings, including the specific histologic features of systemic sclerosis. Report B incorrectly identifies the lesion as basal cell carcinoma, which is inconsistent with the clinical presentation and the presence of a well-demarcated, red nodule with a distinct appearance and histologic features of scleroderma."
+3492.png,dariers disease,B,A,True,98,"Better report: A
+Report A provides a more precise and clinically accurate diagnosis based on the detailed clinical and histological findings, including the description of the lesion's features and the absence of malignancy, whereas Report B offers a general description of a common condition without the specific evidence of the lesion's characteristics in the image."
+528.png,melanocytic-nevi,B,A,True,107,"Better report: A
+Report A accurately diagnoses the clinical features in the image as acrodermatitis enteropathica with a genetic basis, supported by histopathology, laboratory findings, and clinical progression, while Report B incorrectly identifies the lesion as a melanocytic nevus when the image shows a brown papule with a distinct morphology consistent with a benign nevus, but the clinical context and diagnostic reasoning are not fully aligned with the image."
+3926.png,lichen planus,B,A,True,88,"Better report: A
+Report A provides a comprehensive, accurate diagnosis based on clinical findings, histopathological evidence, and a clear correlation with the patient's systemic condition (Tuberous Sclerosis Complex), while Report B incorrectly identifies the condition as ""flat lichen"" and lacks the clinical and diagnostic precision of Report A."
+2990.png,photodermatoses,B,A,True,95,"Better report: A
+Report A provides a more accurate diagnosis based on the clinical features, including the reticulated pattern, hyperpigmentation, and the history of chronic scratching, which are consistent with lichen simplex chronicus. The detailed management plan aligns with the clinical presentation. Report B incorrectly attributes the findings to photodermatitis without considering the specific clinical features and history of chronic scratching."
+71.png,basal-cell-carcinoma-superficial,B,A,True,95,"Better report: A
+Report A provides a more accurate and comprehensive diagnostic narrative, incorporating clinical findings, dermoscopic evidence, histopathological confirmation, and appropriate clinical management, while Report B lacks definitive diagnostic details and relies on speculation."
+1757.png,allergic contact dermatitis,A,B,True,101,"Better report: B
+Report B provides a more comprehensive and accurate diagnosis, incorporating clinical features, histopathological findings, and a detailed rationale for the condition, while Report A lacks specific diagnostic details and misidentifies the condition as contact dermatitis without sufficient evidence."
+212.png,neurofibroma,B,A,True,97,"Better report: A
+Report A provides a more accurate and comprehensive diagnosis based on the clinical features, dermoscopic findings, and histopathological confirmation, whereas Report B lacks specific diagnostic details and overgeneralizes without sufficient evidence to support the diagnosis."
+197.png,nevus-lipomatosus-superficialis,B,A,True,92,"Better report: A
+Report A provides a comprehensive and accurate diagnosis based on clinical features, supporting evidence, and a systematic approach, including genetic confirmation and multi-system involvement, which aligns with the image's findings."
+804.png,tuberous sclerosis,B,A,True,96,"Better report: A
+Report A accurately identifies the clinical features and histopathological findings of a Becker nevus, providing a precise diagnosis and appropriate clinical context. Report B incorrectly attributes the lesions to tuberous sclerosis, which is a more extensive and systemic disorder with different clinical features and a broader spectrum of manifestations."
+3410.png,keloid,B,A,True,89,"Better report: A
+Report A accurately identifies the clinical features and histopathological findings in a patient with a persistent, erythematous lesion on the forearm, including the key diagnostic clues of invasive squamous cell carcinoma, and provides a comprehensive and accurate clinical narrative. Report B incorrectly attributes the findings to hypertrophic scars, which are not supported by the clinical and histopathological evidence in the image."
+3837.png,porokeratosis of mibelli,B,A,True,94,"Better report: A
+Report A provides a more accurate and comprehensive diagnosis based on the clinical features, histopathological findings, and genetic confirmation, aligning with the image's presentation of a skin condition consistent with tuberous sclerosis complex (TSC)."
+1147.png,scabies,B,A,True,105,"Better report: A
+Report A provides a more accurate and comprehensive diagnostic narrative, supported by clinical features, histopathologic findings, and differential diagnosis, while Report B lacks specificity and fails to account for the image's key features."
+1499.png,erythema annulare centrifigum,A,B,True,102,"Better report: B
+Report B provides a more accurate and comprehensive diagnostic narrative, including clinical features, dermoscopic findings, histopathological confirmation, and appropriate staging and treatment plan, all supported by detailed reasoning."
+3859.png,acrodermatitis enteropathica,A,B,True,92,"Better report: B
+Report B provides a more accurate and detailed clinical diagnosis based on the specific features observed in the image, including the clinical presentation, dermoscopic findings, and histopathological confirmation, whereas Report A incorrectly identifies the condition as pyoderma gangrenosum without supporting evidence and mischaracterizes the lesion."
+3483.png,lupus erythematosus,A,B,True,98,"Better report: B
+Report B provides a more accurate and detailed clinical diagnosis based on the image, including histopathological confirmation, a clear clinical correlation with NF1, and appropriate follow-up recommendations, whereas Report A incorrectly attributes the findings to lupus erythematosus without supporting evidence."
+1186.png,lichen simplex,A,B,True,97,"Better report: B
+Report B provides a comprehensive, evidence-based diagnosis with histopathological and patch testing confirmation, including clinical details and management, whereas Report A lacks specificity and fails to account for the histopathological and patch testing findings."
+472.png,blue-nevus,A,B,True,91,"Better report: B
+Report B provides a comprehensive, evidence-based diagnosis with clinical context, histopathological findings, genetic confirmation, and a clear treatment plan, while Report A lacks specific diagnostic details and clinical correlation."
+595.png,squamous-cell-carcinoma,A,B,True,91,"Better report: B
+Report B provides a more accurate and comprehensive diagnostic narrative, including clinical features, dermoscopic findings, histopathological confirmation, and a well-justified treatment plan with excellent prognosis."
+322.png,melanocytic-nevi,A,A,False,33,"Better report: A
+Report A accurately identifies the clinical features in the image, including the irregular black spots and the need for a biopsy for confirmation, which is appropriate given the potential for melanoma. Report B incorrectly diagnoses the condition as erythema annulare centrifugum, which is not supported by the image and the clinical presentation."
+1418.png,scabies,B,A,True,94,"Better report: A
+Report A provides a more accurate diagnosis based on the clinical features and dermatological findings, including dermoscopic details and a more specific etiology, whereas Report B incorrectly identifies the condition as scabies without sufficient evidence and lacks the clinical context of the image."
+1675.png,tuberous sclerosis,A,B,True,96,"Better report: B
+Report B provides a more accurate and detailed diagnostic narrative, correctly identifying the lesion as nevus-lipomatosus-superficialis with appropriate histopathological and dermoscopic findings, while Report A incorrectly identifies the condition as nodular sclerosis without supporting evidence and mischaracterizes the clinical presentation."
+3591.png,neutrophilic dermatoses,A,B,True,101,"Better report: B
+Report B provides a more accurate diagnosis based on the clinical presentation, histopathology, and treatment response, including the specific identification of Sarcoptes scabiei infestation with detailed diagnostic and therapeutic rationale."
+1704.png,myiasis,A,B,True,93,"Better report: B
+Report B provides a comprehensive, accurate diagnosis based on clinical features, histopathology, genetic testing, and supportive evidence, including the patient's age, clinical distribution, and response to treatment. It correctly identifies the condition as acrodermatitis enteropathica, a rare disorder linked to zinc deficiency, with strong justification and a clear rationale for the diagnosis."
+2541.png,stevens johnson syndrome,A,B,True,95,"Better report: B
+Report B provides a more accurate diagnosis based on the clinical features, histopathology, and differential considerations, with a clear and well-supported clinical rationale."
+206.png,melanocytic-nevi,B,A,True,97,"Better report: A
+Report A provides a detailed, clinically accurate diagnosis based on the clinical features, supported by the patient's history, and includes appropriate clinical reasoning and recommendations, whereas Report B is vague and lacks specific diagnostic detail."
+3888.png,lupus erythematosus,B,A,True,89,"Better report: A
+Report A accurately identifies the clinical and histopathological features of tuberous sclerosis complex (TSC), including the characteristic ""ash leaf spots,"" dermal papillomatous lesions, and the diagnostic confirmation of a specific genetic mutation (TSC2), all supported by a comprehensive clinical and histopathological correlation. Report B incorrectly diagnoses the image as lupus erythematosus, which is not supported by the clinical features shown in the image."
+3249.png,drug eruption,B,A,True,100,"Better report: A
+Report A accurately diagnoses the clinical presentation with histopathological and immunohistochemical findings consistent with scleromyxedema, providing a comprehensive and accurate diagnostic narrative."
+2132.png,scleroderma,A,B,True,92,"Better report: B
+Report B provides a more accurate and detailed diagnostic narrative, correctly identifying the clinical presentation as invasive squamous-cell carcinoma with histopathological confirmation, whereas Report A incorrectly suggests systemic sclerosis and dermatomyositis as possible diagnoses without supporting evidence."
+1256.png,prurigo nodularis,B,A,True,96,"Better report: A
+Report A provides a more accurate and comprehensive diagnosis with clinical, dermoscopic, and histopathologic evidence, whereas Report B lacks specificity and fails to recognize the characteristic features of pityriasis rubra pilaris."
+2300.png,folliculitis,A,B,True,95,"Better report: B
+Report B accurately identifies the lesion as a benign melanocytic nevus with no signs of malignancy, and provides a well-supported clinical and dermoscopic diagnosis with appropriate management, whereas Report A incorrectly attributes the image to folliculitis and pustular dermatosis without supporting evidence."
+1227.png,lymphangioma,A,B,True,91,"Better report: B
+Report B provides a more accurate diagnosis based on the clinical features, histopathological findings, and appropriate treatment recommendations, while Report A incorrectly identifies the lesion as a lymphatic malformation without supporting evidence."
+3919.png,syringoma,B,A,True,108,"Better report: A
+Report A provides a more accurate and comprehensive diagnostic narrative, correctly identifying the lesion as a benign nevus based on clinical, dermoscopic, and histological findings, whereas Report B incorrectly identifies the lesion as syringoma without sufficient evidence and fails to recognize the clinical features of a benign nevus."
+2465.png,scleromyxedema,B,A,True,97,"Better report: A
+Report A provides a more accurate and comprehensive diagnosis based on clinical features, histopathology, and appropriate treatment recommendations, while Report B incorrectly identifies the condition as scleromyxedema without sufficient clinical context or supporting evidence."
+2384.png,pyogenic granuloma,B,A,True,94,"Better report: A
+Report A accurately describes the clinical features, histopathology, and treatment response consistent with lichen simplex chronicus, while Report B incorrectly identifies the lesion as a pyogenic granuloma and mischaracterizes the condition."
+150.png,benign-keratosis,B,A,True,98,"Better report: A
+Report A provides a more accurate and comprehensive diagnosis based on the clinical features and histopathological findings, including the presence of comedones, inflammatory papules, and pustules, which are consistent with acne vulgaris, whereas Report B incorrectly identifies the lesion as a skin tag without supporting evidence."
+870.png,lupus subacute,B,A,True,105,"Better report: A
+Report A accurately identifies the clinical features, histopathological findings, and genetic basis of Darier disease, supported by diagnostic criteria and treatment rationale, while Report B incorrectly attributes the findings to lupus erythematosus without considering the specific clinical presentation and diagnostic evidence."
+1979.png,livedo reticularis,B,B,False,63,"Better report: B
+Report B accurately describes the clinical features and diagnosis based on the image, including the appearance of blue/red streaks consistent with spider veins, whereas Report A incorrectly identifies the lesion as invasive squamous-cell carcinoma with a misdiagnosis of a benign condition."
+2457.png,pityriasis rubra pilaris,A,B,True,108,"Better report: B
+Report B provides a more accurate and detailed diagnosis based on the clinical features and histopathological findings, with a clear justification for the diagnosis of a benign melanocytic nevus, whereas Report A incorrectly identifies the condition as erythroderma based on a misinterpretation of the image."
+3866.png,lupus erythematosus,A,B,True,102,"Better report: B
+Report B provides a more accurate and detailed clinical narrative, correctly identifying the lesion as erythema migrans consistent with Lyme disease, supported by clinical features such as the bull's-eye pattern, tick exposure history, and absence of systemic symptoms. The diagnosis is well-supported by the clinical presentation and is consistent with the image. Report A incorrectly diagnoses lupus erythematosus based on a misinterpretation of the butterfly rash pattern, which is not consistent with the image."
+2213.png,pityriasis rubra pilaris,A,B,True,101,"Better report: B
+Report B provides a detailed clinical description, including specific findings such as the well-demarcated plaque, hyperkeratotic papules, fine scaling, chronic pruritus, and the dermoscopic findings of a ""stucco-like"" pattern with discrete brown globules and dotted vessels, which are characteristic of lichen simplex chronicus. The report also correctly identifies the diagnosis and outlines a clear treatment plan and prognosis, making it more accurate and comprehensive than Report A, which lacks specific clinical details and is less precise in its diagnostic reasoning."
+1007.png,lupus subacute,A,B,True,103,"Better report: B
+Report B provides a more accurate and detailed diagnosis based on the clinical and dermoscopic findings, including the absence of systemic involvement, the benign nature of the lesion, and the histological confirmation of a blue nevus."
+3048.png,allergic contact dermatitis,A,B,True,99,"Better report: B
+Report B provides a more comprehensive and accurate diagnostic narrative, integrating clinical features, histopathological findings, and a detailed explanation of the lesion's progression and underlying pathology (keloid formation), with appropriate treatment recommendations."
+706.png,lyme disease,B,A,True,89,"Better report: A
+Report A provides a comprehensive and accurate diagnosis based on clinical features, histopathological findings, and supportive evidence, including the characteristic skin lesions and genetic mutation, which are all consistent with tuberous sclerosis complex (TSC). Report B incorrectly identifies the condition as Lyme disease, which is inconsistent with the clinical presentation and lacks the diagnostic specificity and supporting evidence of Report A."
+3144.png,acne,B,A,True,96,"Better report: A
+Report A provides a comprehensive and accurate diagnosis based on clinical, histopathological, and serological findings, including the characteristic ""butterfly"" distribution and the presence of anti-dsDNA, all consistent with subacute cutaneous lupus erythematosus. Report B incorrectly identifies the condition as folliculitis and lacks the clinical and diagnostic evidence that supports a definitive diagnosis of lupus."
+3597.png,squamous cell carcinoma,A,B,True,97,"Better report: B
+Report B provides a more accurate and comprehensive diagnostic narrative, correctly identifying the lesion as a Becker nevus based on clinical and dermoscopic features, including the absence of malignancy and the benign nature of the condition, whereas Report A incorrectly diagnoses a malignant squamous cell carcinoma without sufficient evidence."
+1988.png,dermatomyositis,B,B,False,62,"Better report: B
+The image shows neck erythema and skin changes consistent with dermatomyositis, not basal cell carcinoma, as the clinical presentation and findings in Report B align with the diagnostic criteria for dermatomyositis, whereas Report A incorrectly identifies the condition as superficial basal cell carcinoma."
+180.png,blue-nevus,A,B,True,97,"Better report: B
+Report B provides a more accurate and comprehensive diagnostic narrative, supported by clinical details such as the lesion's size, location, morphology, and histopathological findings, all of which are consistent with a benign intradermal nevus."
+110.png,seborrheic-keratosis,B,A,True,97,"Better report: A
+Report A provides a more accurate and comprehensive diagnosis based on the clinical and histopathological findings, including the characteristic ""becker nevus"" morphology, dermal melanocytic proliferation, and benign nature, which are all supported by the image."
+3079.png,becker nevus,A,B,True,93,"Better report: B
+Report B provides a comprehensive, evidence-based diagnosis with clinical, histopathological, and immunological data, including specific findings and supporting laboratory results, which are more accurate than the general description in Report A."
