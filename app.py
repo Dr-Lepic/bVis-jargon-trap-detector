@@ -179,15 +179,13 @@ with tab_playground:
     )
 
 with tab_batch:
-    st.info(
-        "⚡ Batch Pipeline is handled by **Team Member 3**. "
-        "This tab will be implemented in the `ui/tab_batch.py` module.",
-        icon="🔧",
+    from ui.tab_batch import render_batch_tab
+    render_batch_tab(
+        api_key=api_key,
+        judge_model=judge_model,
+        writer_model=writer_model,
     )
 
 with tab_analyzer:
-    st.info(
-        "📊 Results Dashboard is handled by **Team Member 3**. "
-        "This tab will be implemented in the `ui/tab_analyzer.py` module.",
-        icon="🔧",
-    )
+    from ui.tab_analyzer import render_analyzer_tab
+    render_analyzer_tab()

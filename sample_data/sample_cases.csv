@@ -1,0 +1,7 @@
+case_id,image,disease_true,disease_wrong,report_plain,report_jargon
+sample-01,darier.png,Darier's Disease,Lichen Planus,Clusters of tan-brown keratotic papules with a greasy surface are visible in a seborrhoeic distribution.,
+sample-02,nevus.png,Melanocytic Nevus,Melanoma,"The lesion is symmetric and uniformly brown, with a smooth regular border and homogeneous pigmentation.",
+sample-03,psoriasis.png,Plaque Psoriasis,Tinea Corporis,A sharply defined erythematous plaque has diffuse adherent silvery scale across its surface.,
+sample-04,eczema.png,Nummular Eczema,Basal Cell Carcinoma,A coin-shaped erythematous patch shows fine scale and mild excoriation without a pearly border.,
+sample-05,acne.png,Acne Vulgaris,Rosacea,Open and closed comedones occur alongside scattered inflammatory papules on the facial skin.,
+sample-06,vitiligo.png,Vitiligo,Tinea Versicolor,"A well-demarcated depigmented patch is present without scale, erythema, or surface textural change.",
