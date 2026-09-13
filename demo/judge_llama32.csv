@@ -1,0 +1,148 @@
+image_file,disease_true,correct_label,pick,fell_for_jargon,picked_words,verdict_raw
+3492.png,dariers disease,B,A,True,94,"Better report: A
+
+This is because Report A provides a more detailed and accurate description of the patient's condition, including the location, size, and appearance of the lesions, as well as the results of the dermoscopic examination and histopathological findings. Report B is more general and does not provide specific details about the condition, making it less accurate."
+528.png,melanocytic-nevi,B,B,False,59,"Better report: B
+
+The image shows a dome-shaped brown papule with a smooth surface, regular shape, and clear borders, which is consistent with the description of a melanocytic nevus in Report B. Report A describes acrodermatitis enteropathica, which is not supported by the visual characteristics of the image."
+3926.png,lichen planus,B,A,True,118,"Better report: A
+
+The report A is more accurate because it provides a detailed description of the patient's symptoms, including the location and appearance of the lesions, and it also mentions the characteristic dermoscopic and histopathological findings that are specific to tuberous sclerosis complex."
+2990.png,photodermatoses,B,A,True,123,"Better report: A
+
+This is because Report A provides a more detailed and accurate description of the condition, including the presence of a well-demarcated, erythematous plaque with fine scale formation, which are characteristic features of lichen simplex chronicus."
+71.png,basal-cell-carcinoma-superficial,B,A,True,110,"Better report: A
+
+The report A is more accurate because it provides a clear and specific diagnosis of lichen planus, supported by dermoscopic findings, whereas report B is more general and does not provide a clear diagnosis."
+1757.png,allergic contact dermatitis,A,B,True,161,"Better report: B
+
+The report B is more accurate because it provides a detailed description of the clinical presentation, including the characteristic dermoscopic features and histopathological findings that are specific to lichen planus, which are not mentioned in report A."
+212.png,neurofibroma,B,A,True,121,"Better report: A
+
+This is because Report A provides a more detailed and accurate description of the lesion, including its size, color, texture, and location, which are all relevant factors in diagnosing a blue nevus. Additionally, the report's mention of dermoscopy findings and the patient's age are also important considerations in this diagnosis. In contrast, Report B is more general and does not provide the same level of detail or specificity, making it less accurate."
+197.png,nevus-lipomatosus-superficialis,B,A,True,112,"Better report: A
+
+This is because Report A provides a detailed and accurate description of the skin lesion, including its size, texture, and appearance, which are consistent with the characteristics of a skin tag. The mention of a ""coarse mesh"" pattern on dermatoscopy also supports this diagnosis, as skin tags often exhibit a similar appearance on the skin's surface. In contrast, Report B is more general and does not provide specific details about the lesion, making it less accurate."
+804.png,tuberous sclerosis,B,A,True,186,"Better report: A
+
+This is because the description in Report A matches the image provided, with the mention of a well-demarcated, hyperpigmented lesion on the upper left arm, which is consistent with the appearance of a Becker nevus. In contrast, Report B describes a condition (tuberous sclerosis) that does not match the image, which shows a single, well-defined lesion rather than multiple, scattered lesions."
+3410.png,keloid,B,A,True,130,"Better report: A
+
+This is because Report A provides a detailed description of the lesion, including its size, location, and characteristics, and it is supported by both dermoscopic and histopathological findings that are consistent with a diagnosis of squamous cell carcinoma (SCC)."
+3837.png,porokeratosis of mibelli,B,A,True,104,"Better report: A
+
+This is because Report A provides a more detailed and accurate description of the patient's symptoms, including the ""snowflake"" pattern observed on dermoscopic examination, which is a characteristic feature of tuberous sclerosis. Additionally, the report mentions the patient's family history and neurological symptoms, which further support the diagnosis. In contrast, Report B provides a more general description of the skin lesion and does not provide any specific details that would support a diagnosis of Mibelli's type of keratosis pilaris."
+1147.png,scabies,B,A,True,165,"Better report: A
+
+The report A is the better, more accurate diagnostic narrative for this image because it provides a detailed description of the clinical presentation, dermoscopic findings, and the exclusion of other differential diagnoses, which are all relevant to the diagnosis of pityriasis rubra pilaris."
+1499.png,erythema annulare centrifigum,A,A,False,63,"Better report: A
+
+The report A is more accurate because it provides a clear and specific diagnosis of tinea corporis, which is supported by the clinical presentation and medical history, whereas report B provides a diagnosis of a superficially spreading basal cell carcinoma that is not supported by the image."
+3859.png,acrodermatitis enteropathica,A,A,False,60,"Better report: A
+
+This is because the description in Report A matches the image provided, which shows a perineal skin lesion with erythema and a yellowish crust, consistent with the characteristics of pyoderma gangrenosum. The mention of a chronic inflammatory disease and the location of the lesion on the perineum are also consistent with the image. In contrast, Report B describes a different condition, pyogenic granuloma, which is not supported by the image."
+3483.png,lupus erythematosus,A,A,False,43,"Better report: A
+
+The report A is more accurate because it provides a clear description of the skin condition, including the presence of multiple papules and plaques, which are characteristic of lupus erythematosus."
+1186.png,lichen simplex,A,A,False,59,"Better report: A
+
+The report A is more accurate because it provides a clear and concise description of the condition, while Report B is overly detailed and includes information that is not relevant to the image."
+472.png,blue-nevus,A,A,False,37,"Better report: A
+
+The report A is more accurate because it provides a more detailed and specific description of the skin condition, including the presence of blue-black papules with irregular borders, which are common characteristics of melanoma. Report B, on the other hand, describes a condition that is not consistent with the image provided, as acrodermatitis enteropathica is a rare genetic disorder that does not typically present with the characteristics described in the image."
+595.png,squamous-cell-carcinoma,A,B,True,106,"Better report: B
+
+This is because the description in Report B is more specific and accurate, mentioning a ""comet-tail"" pattern on dermatoscopy, which is a characteristic feature of basal cell carcinoma, whereas Report A's description is more general and could apply to various skin conditions."
+322.png,melanocytic-nevi,A,A,False,33,"Better report: A
+
+The report A is more accurate because it provides a clear and specific description of the lesion, including its irregular shape and color, which are characteristic of atypical melanocytic nevi or melanoma. Report B, on the other hand, describes a different condition, erythema annulare centrifugum, which has a distinct appearance and characteristics that are not present in the image."
+1418.png,scabies,B,A,True,115,"Better report: A
+
+This is because the description in Report A matches the image's characteristics, such as the presence of multiple, well-demarcated, erythematous papules with a hairpin-shaped dermoscopic pattern, which is indicative of folliculitis."
+1675.png,tuberous sclerosis,A,A,False,108,"Better report: A
+
+The report A is more accurate because it provides a detailed description of the condition, including its characteristics, potential causes, and treatment options, which are all relevant to the image."
+3591.png,neutrophilic dermatoses,A,A,False,48,"Better report: A
+
+The better report is A, as it provides a more accurate and comprehensive diagnostic narrative for the image, considering the clinical features, histopathology, and laboratory tests required for a definitive diagnosis of Sweet's syndrome."
+1704.png,myiasis,A,A,False,44,"Better report: A
+
+This image shows a maggot infestation, which is not consistent with the symptoms described in Report B, which are more indicative of acrodermatitis enteropathica."
+2541.png,stevens johnson syndrome,A,A,False,64,"Better report: A
+
+This is because the image shows diffuse ulceration, erosion, and necrosis on the lips, which are consistent with the symptoms of Stevens-Johnson syndrome, and the report A provides a clear and accurate description of the condition, its causes, and the appropriate treatment options."
+206.png,melanocytic-nevi,B,A,True,165,"Better report: A
+
+This is because Report A provides a detailed description of the patient's symptoms, including the location and appearance of the lesions, as well as the results of the dermoscopic evaluation and histopathological findings. The report also provides a clear diagnosis of a drug eruption and recommends appropriate treatment. In contrast, Report B is very brief and does not provide any specific information about the patient's condition or the recommended course of action."
+3888.png,lupus erythematosus,B,A,True,118,"Better report: A
+
+The report A is more accurate because it provides a detailed description of the patient's condition, including the location and appearance of the lesions, and it also provides a histopathological examination that confirms the diagnosis of tuberous sclerosis."
+3249.png,drug eruption,B,A,True,126,"Better report: A
+
+This is because Report A provides a more detailed and accurate description of the patient's condition, including the location and appearance of the lesions, as well as the histopathological findings that are consistent with the diagnosis of scleromyxedema."
+2132.png,scleroderma,A,A,False,64,"Better report: A
+
+This is because the image shows a hand with swelling and white patches on the fingertips, which is consistent with the description of systemic sclerosis and dermatomyositis in Report A. The description in Report B is more specific to a skin lesion on the temple, which does not match the image provided."
+1256.png,prurigo nodularis,B,A,True,139,"Better report: A
+
+This is because Report A provides a detailed and accurate description of the patient's condition, including the characteristic ""snowflake"" appearance and the presence of papulopustular zones, which are specific features of Pityriasis Rubra Pilaris (PRP). In contrast, Report B is more general and does not provide a clear diagnosis or description of the condition."
+2300.png,folliculitis,A,A,False,62,"Better report: A
+
+The report A is more accurate because it provides a clear and specific description of the condition, including the location, appearance, and potential causes of the diffuse follicular pustules, which are consistent with the image."
+1227.png,lymphangioma,A,A,False,106,"Better report: A
+
+This is because the image appears to show a solitary, expansive mass in the skin, which is consistent with the description of a lymphatic malformation provided in Report A. The mention of a ""light yellow color"" and ""linear elevations"" in the image also aligns with the characteristics of a lymphatic malformation. In contrast, Report B describes a diffuse erythematous eruption with folliculitis, which does not match the image."
+3919.png,syringoma,B,A,True,117,"Better report: A
+
+The report A is more accurate because it provides a detailed description of the lesion's appearance, including its size, color, and texture, which are all relevant features for diagnosing a benign melanocytic nevus."
+2465.png,scleromyxedema,B,A,True,179,"Better report: A
+
+This is because the description in Report A matches the image provided, including the location of the lesions, their appearance, and the associated symptoms. The mention of pruritus, the presence of well-demarcated papules, and the absence of hyper- or hypopigmentation are all consistent with the image. Additionally, the histopathology findings and dermoscopy results described in Report A are also consistent with the diagnosis of prurigo nodularis. In contrast, Report B does not provide a clear description of the condition or its symptoms, and the mention of"
+2384.png,pyogenic granuloma,B,A,True,131,"Better report: A
+
+This is because Report A provides a more detailed and accurate description of the lesion, including its appearance, location, and histopathological findings, which are consistent with the characteristics of lichen simplex chronica. Report B is more general and does not provide specific details about the lesion, making it less accurate."
+150.png,benign-keratosis,B,A,True,128,"Better report: A
+
+This is because the description in Report A matches the characteristics of acne vulgaris, including the presence of erythematous papules, scaling, and a granular pattern on dermoscopy, which are all consistent with the condition."
+870.png,lupus subacute,B,A,True,130,"Better report: A
+
+The report A is more accurate because it provides a detailed description of the patient's symptoms, including the location and appearance of the lesions, and it also mentions the results of dermoscopy and histopathology, which are crucial for diagnosing Darier disease."
+1979.png,livedo reticularis,B,B,False,63,"Better report: B
+
+This is because the image provided shows a network of blue or red streaks on the lower extremities, which is consistent with the diagnosis of spider veins or varicose veins, as described in Report B. The description in Report A does not match the image provided, and the diagnosis of squamous cell carcinoma (SCC) is not supported by the visual evidence."
+2457.png,pityriasis rubra pilaris,A,A,False,75,"Better report: A
+
+This report is more accurate because it provides a clear and concise description of the condition, including its symptoms and potential causes, which aligns with the characteristics of the image. In contrast, Report B focuses on a specific feature of the lesion but fails to provide a comprehensive understanding of the condition."
+3866.png,lupus erythematosus,A,A,False,49,"Better report: A
+
+The better report is A, as it accurately describes the patient's facial skin lesions, which are characteristic of lupus erythematosus, and provides a clear and detailed description of the symptoms and presentation. Report B, on the other hand, is less accurate, as it focuses on a specific lesion on the left forearm that is not visible in the provided image, and does not provide a comprehensive description of the patient's overall condition."
+2213.png,pityriasis rubra pilaris,A,B,True,138,"Better report: B
+
+This is because Report B provides a more detailed and accurate description of the patient's symptoms, including the well-demarcated, sharply defined, erythematous plaques and the presence of hyperkeratosis, scaling, and fissuring. The dermoscopic examination and histopathological findings also provide specific and relevant information that supports the diagnosis of lichen simplex chronicus."
+1007.png,lupus subacute,A,B,True,138,"Better report: B
+
+This is because the image shows a close-up of a male's lip skin with multiple well-demarcated, skin-colored lesions that are approximately 2-3 mm in diameter, which is consistent with the description provided in Report B. The presence of a subtle bluish hue and a homogenous blue-gray color without any white spots or scales, as observed in the dermoscopic evaluation, further supports this diagnosis. In contrast, Report A describes a condition that is typically characterized by erythematous papules, which are not visible in the provided image."
+3048.png,allergic contact dermatitis,A,B,True,130,"Better report: B
+
+This is because Report B provides a more detailed and accurate description of the lesion, including its size, color, texture, and dermoscopic pattern, which are all relevant features for diagnosing a keloid. Additionally, the report takes into account the patient's history of keloid formation and family history, which are important factors in making a diagnosis. In contrast, Report A only mentions the presence of erythema and coalescing vesicles, which are not specific enough to make a diagnosis of a keloid."
+706.png,lyme disease,B,A,True,108,"Better report: A
+
+The report A is more accurate because it provides a detailed description of the patient's symptoms, including the distribution of the lesions and the presence of ash-leaf spots, which are characteristic of tuberous sclerosis complex (TSC)."
+3144.png,acne,B,A,True,110,"Better report: A
+
+This is because the description in Report A matches the image's characteristics, such as the presence of erythematous papules and a lacy network pattern, which are indicative of lupus erythematosus."
+3597.png,squamous cell carcinoma,A,A,False,66,"Better report: A
+
+The image shows a red nodule with surface erosion and blood crust, which is consistent with a diagnosis of squamous cell carcinoma, a type of malignant skin tumor."
+1988.png,dermatomyositis,B,B,False,62,"Better report: B
+
+This is because the image shows a woman with a large, raised, erythematous lesion on her neck, which is not consistent with the description of a small, asymptomatic lesion on the cheek provided in Report A. The description in Report B matches the image more closely, suggesting that the better diagnostic narrative is Report B."
+180.png,blue-nevus,A,B,True,107,"Better report: B
+
+This is because Report B provides a more detailed and accurate description of the lesions, including their coloration, shape, and texture, which are all relevant characteristics for diagnosing skin lesions. Additionally, Report B suggests further clinical evaluation and biopsy, which is a more appropriate course of action given the description of the lesions."
+110.png,seborrheic-keratosis,B,A,True,143,"Better report: A
+
+The report A is more accurate because it provides a detailed description of the lesion's characteristics, including its size, color, and dermoscopic features, which are consistent with a benign Becker nevus."
+3079.png,becker nevus,A,A,False,41,"Better report: A
+
+This is because the image shows a diffuse brown patch with increased hair growth, which is consistent with seborrheic keratosis, but not with the more specific and detailed description of lupus subacute provided in Report B."

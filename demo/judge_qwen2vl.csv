@@ -1,0 +1,144 @@
+image_file,disease_true,correct_label,pick,fell_for_jargon,picked_words,verdict_raw
+556.png,basal-cell-carcinoma,B,B,False,42,"Better report: B  
+The image depicts a single red nodule with a smooth texture, which aligns with the clinical presentation described in Report B for basal cell carcinoma. The dermoscopic features mentioned in Report A do not match the characteristics of the lesion shown in the image."
+3492.png,dariers disease,B,B,False,44,"Better report: B
+
+Justification: The image shows multiple follicular red papules with thin scales on the forehead, which aligns with the description provided in Report B for follicular keratosis. Report A describes lesions on the dorsal aspect of the hands, which do not match the location shown in the image."
+528.png,melanocytic-nevi,B,B,False,59,"Better report: B  
+Justification: The image depicts a single, dome-shaped brown papule with a smooth surface and clear borders, which is characteristic of a melanocytic nevus. The clinical presentation described in Report B aligns more closely with the visual characteristics observed in the image compared to the dermoscopic features mentioned in Report A."
+3926.png,lichen planus,B,B,False,70,"Better report: B
+
+The image shows a skin condition with multiple papules, which is more consistent with the description of flat lichen rather than the features described in tuberous sclerosis."
+2990.png,photodermatoses,B,A,True,123,"Better report: A
+
+The image shows a well-demarcated, erythematous plaque with papules and fine scaling, which aligns with the characteristics described in Report A for lichen simplex chronicus, rather than the features of photodermatitis as described in Report B."
+71.png,basal-cell-carcinoma-superficial,B,A,True,110,"Better report: A
+
+Justification: Report A provides a detailed description of the lesions' characteristics and dermoscopic findings, which align closely with the clinical presentation of lichen planus. Report B, while noting potential inflammation, does not specify the type of inflammatory condition or the need for further investigation into actinic keratosis, leaving the diagnosis less certain compared to the clear and specific diagnosis given in Report A."
+1757.png,allergic contact dermatitis,A,B,True,161,"Better report: B
+
+Justification: The image shows numerous red patches, vesicles, and bullae on the back of the left hand and extending to the fingers, which is more indicative of a condition like contact dermatitis rather than lichen planus, which typically presents with well-demarcated, erythematous papules and a characteristic silvery-white, reticulate pattern."
+212.png,neurofibroma,B,B,False,63,"Better report: B
+
+The image shows a black spherical growth that does not match the description of a blue nevus or a blue nevus in Report A. The presence of a black spherical growth suggests a different pathology, possibly a skin tag or a neurofibroma, which requires further investigation as stated in Report B."
+197.png,nevus-lipomatosus-superficialis,B,B,False,53,"Better report: B
+
+The image shows a single lesion in the buttock crease, which is consistent with the description of a skin tag rather than the multiple, widespread papules described in Report A."
+804.png,tuberous sclerosis,B,B,False,45,"Better report: B
+
+The image shows light red papules on the cheeks and around the mouth, which are characteristic of tuberous sclerosis, rather than the features described in Report A for a Becker nevus."
+3410.png,keloid,B,A,True,130,"Better report: A
+
+Justification: Report A provides a detailed clinical description of the lesion's characteristics, including its size, location, progression, and microscopic findings, which align closely with the dermoscopic and histopathological features described. Report B, while offering a plausible explanation for the appearance of the skin, lacks the necessary detail and context provided in Report A to support a definitive diagnosis."
+3837.png,porokeratosis of mibelli,B,B,False,109,"Better report: B
+
+The image shows a single lesion with irregular keratotic plaques, clear edges, and a darker color, which aligns more closely with the description in Report B of keratotic plaques and the characteristics of Mibelli's keratosis pilaris."
+1147.png,scabies,B,A,True,165,"Better report: A
+
+The image shows a close-up of a person's face with scattered red papules, which aligns more closely with the clinical presentation described in Report A for pityriasis rubra pilaris rather than the symptoms typically associated with scabies as described in Report B."
+1499.png,erythema annulare centrifigum,A,A,False,63,"Better report: A
+
+The image shows scattered circular erythematous patches on the scalp, which aligns with the description in Report A for tinea corporis, a fungal infection, rather than the specific lesion described in Report B for a superficially spreading basal cell carcinoma."
+3859.png,acrodermatitis enteropathica,A,A,False,60,"Better report: A  
+The image shows a perineal skin lesion with extensive erythema and yellowish crusts, which is inconsistent with the clinical presentation described in Report B (pyogenic granuloma) and more suggestive of the findings described in Report A (pyoderma gangrenosum)."
+3483.png,lupus erythematosus,A,A,False,43,"Better report: A  
+The image shows widespread, irregularly distributed papules and plaques on the back, which are inconsistent with the localized, well-demarcated lesion described in Report B. The findings align more closely with the characteristics of lupus erythematosus as described in Report A."
+1186.png,lichen simplex,A,B,True,133,"Better report: B
+
+The image shows scattered green pea-sized papules and nodules, which are not characteristic of allergic contact dermatitis but rather resemble lichen simplex chronicus. Report B accurately describes the clinical features and diagnostic process leading to the correct diagnosis of allergic contact dermatitis, including dermoscopic findings and histopathological evidence, which are not present in Report A."
+472.png,blue-nevus,A,A,False,37,"Better report: A
+
+The image shows a single blue-black papule with irregular borders, which is more consistent with the findings described in Report A, suggesting diagnoses like blue nevus, melanoma, or basal cell carcinoma, rather than the widespread, symmetrically distributed erythematous papules described in Report B."
+595.png,squamous-cell-carcinoma,A,B,True,106,"Better report: B
+
+Justification: Report B accurately describes the clinical appearance, dermoscopic findings, and biopsy confirmation of a superficial basal cell carcinoma, which matches the characteristics shown in the image."
+322.png,melanocytic-nevi,A,B,True,129,"Better report: B
+
+The image shows a lesion with a central dark spot surrounded by a reddish ring, which is characteristic of erythema annulare centrifugum, not an atypical melanocytic nevus or melanoma."
+1418.png,scabies,B,A,True,115,"Better report: A
+
+The image shows scattered red papules with perifollicular erythema, which aligns with the description of folliculitis rather than scabies, as indicated by Report A."
+1675.png,tuberous sclerosis,A,A,False,108,"Better report: A
+
+The image shows facial skin lesions that are described as multiple brownish nodules varying in size, which aligns with the characteristics of nodular sclerosis mentioned in Report A."
+3591.png,neutrophilic dermatoses,A,A,False,48,"Better report: A
+
+Justification: The image depicts a large area of swollen erythema with clear borders, which aligns with the clinical features described in Report A for Sweet's syndrome, rather than the characteristics of scabies as described in Report B."
+1704.png,myiasis,A,A,False,44,"Better report: A  
+The image depicts maggot larvae, which aligns with Report A's description of maggots on the skin as larvae of flies commonly found in wounds or pressure sores."
+2541.png,stevens johnson syndrome,A,B,True,153,"Better report: B
+
+Justification: The image depicts a young individual with significant oral mucosal involvement, which is not characteristic of Pityriasis Rubra Pilaris (PRP) but rather suggestive of Stevens-Johnson Syndrome, which typically presents with diffuse ulceration, erosion, and necrosis on the lips and mucous membranes. Report B accurately describes the clinical presentation and diagnostic findings consistent with PRP, while Report A does not match the visual evidence provided in the image."
+206.png,melanocytic-nevi,B,B,False,28,"Better report: B
+
+Justification: The image shows a single lesion on the forearm, which does not match the widespread distribution of lesions described in Report A. Additionally, the lesion appears as a single papule rather than the multiple papules and plaques described in Report A. Therefore, Report B is more accurate for this image."
+3888.png,lupus erythematosus,B,B,False,54,"Better report: B
+
+The image shows skin lesions on the palm of the right hand, which matches the description in Report B, whereas Report A describes lesions on the face and trunk, which do not match the image provided."
+3249.png,drug eruption,B,A,True,126,"Better report: A
+
+The image shows erythematous papules on the extremities, which aligns with the description in Report A, indicating scleromyxedema rather than the diffuse red rashes described in Report B."
+2132.png,scleroderma,A,B,True,115,"Better report: B
+
+Justification: The image shows a hand with swelling and white patches on the fingertips, which aligns more closely with the description provided in Report B, where the patient's presentation includes well-demarcated, erythematous nodules and papules, indicative of a cutaneous condition rather than systemic diseases like systemic sclerosis or dermatomyositis."
+1256.png,prurigo nodularis,B,A,True,139,"Better report: A
+
+Justification: The image shows a characteristic pattern of pityriasis rubra pilaris, including the ""snowflake"" dermoscopic pattern and the distribution of lesions, which aligns closely with the description provided in Report A."
+2300.png,folliculitis,A,A,False,62,"Better report: A
+
+Justification: The image depicts a condition involving diffuse follicular pustules, which is not consistent with the description of a well-demarcated, slightly raised lesion on the back described in Report B. Report A correctly identifies the skin condition as potentially being caused by folliculitis or pustular dermatosis, which aligns with the appearance of the skin in the image."
+1227.png,lymphangioma,A,B,True,97,"Better report: B
+
+The image depicts a lesion on the chest that does not match the characteristics described in Report A, which pertains to a lymphatic malformation. Instead, the lesion appears to be a single, localized area without the typical features of a lymphatic malformation, making Report B the more accurate diagnostic narrative for this image."
+3919.png,syringoma,B,B,False,78,"Better report: B
+
+Justification: The image shows numerous small, light brown papules on the skin, which aligns more closely with the description of syringoma rather than the features described in Report A for an acquired junctional melanocytic nevus."
+2465.png,scleromyxedema,B,B,False,39,"Better report: B  
+The image shows a back with dense light brown papules merging into patches, which aligns more closely with the description provided in Report B for scleromyxedema rather than the characteristics described in Report A for prurigo nodularis."
+2384.png,pyogenic granuloma,B,B,False,65,"Better report: B
+
+The image shows a single, lobulated nodule on the skin, which is more consistent with the description of a pyogenic granuloma rather than the widespread, pruritic plaque described in Report A."
+150.png,benign-keratosis,B,A,True,128,"Better report: A
+
+Justification: The image shows signs of acne vulgaris, characterized by multifaceted lesions with varying degrees of scaling and exfoliation, which aligns with the description provided in Report A."
+870.png,lupus subacute,B,A,True,130,"Better report: A
+
+The image shows a child with widespread, well-demarcated, and pruritic lesions on the face, which are more indicative of Darier disease than lupus erythematosus."
+1979.png,livedo reticularis,B,B,False,63,"Better report: B
+
+Justification: The image depicts skin lesions on the lower extremities with a network of blue or red streaks, which is characteristic of spider veins or varicose veins, not a well-demarcated, erythematous lesion on the cheek as described in Report A."
+2457.png,pityriasis rubra pilaris,A,B,True,176,"Better report: B
+
+The image depicts a skin condition characterized by a well-demarcated, asymptomatic lesion with a uniform brown coloration and subtle variations in shade, which aligns with the description of a common acquired melanocytic nevus rather than the widespread erythema described in Report A."
+3866.png,lupus erythematosus,A,A,False,49,"Better report: A
+
+The image shows facial skin lesions with edematous erythema and vesicles in a ""butterfly"" pattern, which is characteristic of lupus erythematosus, as described in Report A."
+2213.png,pityriasis rubra pilaris,A,B,True,138,"Better report: B
+
+Justification: Report B provides a detailed description of the clinical presentation, including the location, appearance, and progression of the lesions, as well as the results of dermoscopy and histopathological examination, which aligns closely with the visual characteristics observed in the image."
+1007.png,lupus subacute,A,B,True,138,"Better report: B
+
+The image shows lesions on the dorsal aspect of the right hand, which do not match the characteristics described in Report A (erythematous papules on the upper lip). Instead, the description aligns closely with the features of blue nevi as outlined in Report B."
+3048.png,allergic contact dermatitis,A,B,True,130,"Better report: B
+
+Justification: The image shows a lesion with features consistent with a keloid, including a firm, nodular appearance, hyperpigmentation, and a central erythematous area with fine scales, which aligns with the description provided in Report B."
+706.png,lyme disease,B,B,False,77,"Better report: B
+
+The image shows a large area of dark red rash on the trunk, which is more consistent with the description of Lyme disease rather than the characteristics of tuberous sclerosis complex as described in Report A."
+3144.png,acne,B,A,True,110,"Better report: A
+
+The image shows erythematous papules with central clearing, resembling a ""target"" configuration, which is characteristic of subacute cutaneous lupus erythematosus, as described in Report A."
+3597.png,squamous cell carcinoma,A,B,True,112,"Better report: B
+
+The image depicts a lesion that is hyperpigmented, well-demarcated, and has a smooth surface with small papules, which are characteristic findings of a Becker nevus, rather than the red nodule with surface erosion and blood crust described in Report A."
+1988.png,dermatomyositis,B,B,False,62,"Better report: B  
+The image shows erythema on the neck, which aligns with the clinical manifestations described in Report B for dermatomyositis, rather than the characteristics of a basal cell carcinoma superficial mentioned in Report A."
+180.png,blue-nevus,A,B,True,107,"Better report: B
+
+Justification: The image shows a single lesion with a blue-black coloration, which does not match the description of multiple dermographically distinct lesions with varying shades of brown as described in Report B. Report B incorrectly diagnoses the lesion as Lentigo Maligna and a common acquired naevus, which do not correspond to the blue-black appearance seen in the image."
+110.png,seborrheic-keratosis,B,A,True,143,"Better report: A
+
+The lesion described in Report A matches the clinical presentation of a Becker nevus, including its location, morphology, coloration, and lack of atypical features, whereas Report B describes a seborrheic keratosis, which does not align with the characteristics of the lesion shown in the image."
+3079.png,becker nevus,A,A,False,41,"Better report: A
+
+The image shows diffuse brown patches on the shoulder and back area, which aligns with the description in Report A for seborrheic keratosis, a benign skin condition."
